@@ -44,7 +44,7 @@ function bundleTemplate(pattern, fileName, _opts) {
 
   _jspm2['default'].setPackagePath(options.packagePath);
 
-  var builder = new _jspm2['default'].Builder();
+  var builder = new _jspm2['default'].Builder(options.builder);
   var baseURL = builder.loader.baseURL;
   var cwd = _systemjsBuilderLibUtils2['default'].fromFileURL(baseURL);;
   var outfile = _path2['default'].resolve(_systemjsBuilderLibUtils2['default'].fromFileURL(baseURL), fileName);
